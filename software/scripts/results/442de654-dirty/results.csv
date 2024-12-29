@@ -1,0 +1,52 @@
+app,name,compiler,cycles
+omp_parallel_for_benchmark,Sequqntial Duration,gcc,3
+omp_parallel_for_benchmark,OpenMP Parallel Duration,gcc,24237
+omp_parallel_for_benchmark,OpenMP Unrolled Parallel Duration,gcc,9461
+barrier_benchmark,1 barriers,gcc,173
+barrier_benchmark,2 barriers,gcc,230
+barrier_benchmark,3 barriers,gcc,336
+barrier_benchmark,4 barriers,gcc,431
+barrier_benchmark,5 barriers,gcc,533
+barrier_benchmark,6 barriers,gcc,634
+barrier_benchmark,7 barriers,gcc,761
+barrier_benchmark,8 barriers,gcc,848
+barrier_benchmark,9 barriers,gcc,968
+barrier_benchmark,10 barriers,gcc,1066
+barrier_benchmark,11 barriers,gcc,1176
+barrier_benchmark,12 barriers,gcc,1283
+barrier_benchmark,13 barriers,gcc,1382
+barrier_benchmark,14 barriers,gcc,1494
+barrier_benchmark,15 barriers,gcc,1602
+barrier_benchmark,16 barriers,gcc,1720
+barrier_conv,Mempool barrier cycles,gcc,4973
+barrier_conv,GOMP barrier cycles,gcc,4824
+critical_benchmark,Manual Critical Duration,gcc,61
+critical_benchmark,OMP Critical Duration,gcc,96
+master_benchmark,Manual Master Duration,gcc,7
+master_benchmark,OMP Master Duration,gcc,36
+omp_overhead,Sequential Duration,gcc,3
+omp_overhead,Static Duration,gcc,457
+omp_overhead,Dynamic Duration,gcc,650
+omp_overhead,Section Duration,gcc,739
+omp_overhead,Startup time duration,gcc,264
+omp_parallel_for_dynamic_benchmark,Sequqntial Duration,gcc,138659
+reduction_benchmark,Sequential Duration,gcc,1758
+reduction_benchmark,Manual Parallel1 Duration,gcc,353
+reduction_benchmark,Manual Parallel2 Duration,gcc,13601
+reduction_benchmark,OMP Static Duration,gcc,667
+reduction_benchmark2,Static duration with 1 elements,gcc,613
+reduction_benchmark2,Static duration with 2 elements,gcc,470
+reduction_benchmark2,Static duration with 4 elements,gcc,433
+reduction_benchmark2,Static duration with 8 elements,gcc,422
+reduction_benchmark2,Static duration with 16 elements,gcc,415
+reduction_benchmark2,Static duration with 32 elements,gcc,428
+reduction_benchmark2,Static duration with 64 elements,gcc,449
+reduction_benchmark2,Static duration with 128 elements,gcc,492
+reduction_benchmark2,Static duration with 256 elements,gcc,603
+reduction_benchmark2,Static duration with 512 elements,gcc,841
+reduction_benchmark2,Static duration with 1024 elements,gcc,1114
+reduction_benchmark2,Static duration with 2048 elements,gcc,1714
+reduction_benchmark2,Static duration with 4096 elements,gcc,3284
+reduction_benchmark2,Static duration with 8192 elements,gcc,6058
+single_benchmark,Manual Single Duration,gcc,134
+single_benchmark,OMP Single Duration,gcc,1068

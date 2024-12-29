@@ -1,0 +1,9 @@
+app,name,compiler,cycles
+Dynamic SPMV,64,gcc,1073
+Dynamic SPMV,128,gcc,2013
+Dynamic SPMV,256,gcc,5523
+Dynamic SPMV,512,gcc,21162
+Dynamic SPMV,64,llvm,3297
+Dynamic SPMV,128,llvm,4219
+Dynamic SPMV,256,llvm,8269
+Dynamic SPMV,512,llvm,23281

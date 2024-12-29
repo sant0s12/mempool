@@ -1,0 +1,37 @@
+app,name,compiler,cycles
+barrier_benchmark,1 barriers,gcc,143
+barrier_benchmark,2 barriers,gcc,234
+barrier_benchmark,3 barriers,gcc,333
+barrier_benchmark,4 barriers,gcc,428
+barrier_benchmark,5 barriers,gcc,535
+barrier_benchmark,6 barriers,gcc,641
+barrier_benchmark,7 barriers,gcc,761
+barrier_benchmark,8 barriers,gcc,857
+barrier_benchmark,9 barriers,gcc,964
+barrier_benchmark,10 barriers,gcc,1068
+barrier_benchmark,11 barriers,gcc,1183
+barrier_benchmark,12 barriers,gcc,1288
+barrier_benchmark,13 barriers,gcc,1396
+barrier_benchmark,14 barriers,gcc,1507
+barrier_benchmark,15 barriers,gcc,1609
+barrier_benchmark,16 barriers,gcc,1709
+barrier_conv,Mempool barrier cycles,gcc,5156
+barrier_conv,GOMP barrier cycles,gcc,5157
+barrier_benchmark,1 barriers,llvm,209
+barrier_benchmark,2 barriers,llvm,177
+barrier_benchmark,3 barriers,llvm,268
+barrier_benchmark,4 barriers,llvm,356
+barrier_benchmark,5 barriers,llvm,444
+barrier_benchmark,6 barriers,llvm,535
+barrier_benchmark,7 barriers,llvm,625
+barrier_benchmark,8 barriers,llvm,718
+barrier_benchmark,9 barriers,llvm,804
+barrier_benchmark,10 barriers,llvm,895
+barrier_benchmark,11 barriers,llvm,981
+barrier_benchmark,12 barriers,llvm,1077
+barrier_benchmark,13 barriers,llvm,1163
+barrier_benchmark,14 barriers,llvm,1254
+barrier_benchmark,15 barriers,llvm,1340
+barrier_benchmark,16 barriers,llvm,1436
+barrier_conv,Mempool barrier cycles,llvm,8695
+barrier_conv,GOMP barrier cycles,llvm,8547

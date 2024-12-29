@@ -137,11 +137,11 @@ ifeq ($(COMPILER),gcc)
 	RISCV_LDFLAGS       += -static -nostartfiles -lm -lgcc $(RISCV_FLAGS_GCC) $(RISCV_FLAGS_COMMON) -L$(ROOT_DIR)
 	RISCV_OBJDUMP_FLAGS += --disassembler-option="march=$(RISCV_ARCH_AS)"
 	# For unit tests
-	RISCV_CCFLAGS_TESTS ?= $(RISCV_FLAGS_GCC) $(RISCV_FLAGS_COMMON_TESTS) -fvisibility=hidden -nostdlib $(RISCV_LDFLAGS)
+	RISCV_CCFLAGS_TESTS ?= $(RISCV_FLAGS_GCC) $(RISCV_FLAGS_COMMON_TESTS) -fvisibility=hidden $(RISCV_LDFLAGS)
 else
 	RISCV_CCFLAGS       += $(RISCV_LLVM_TARGET) $(RISCV_FLAGS_LLVM) $(RISCV_FLAGS_COMMON) -std=gnu99
 	RISCV_CXXFLAGS      += $(RISCV_LLVM_TARGET) $(RISCV_FLAGS_LLVM) $(RISCV_FLAGS_COMMON) -std=c++17 -fno-exceptions -fno-threadsafe-statics
-	RISCV_LDFLAGS       += -static -nostartfiles -nostdlib -lgcc -lm -fuse-ld=lld -mcmodel=small $(RISCV_LLVM_TARGET) $(RISCV_FLAGS_COMMON) -L$(ROOT_DIR)
+	RISCV_LDFLAGS       += -static -nostartfiles -lgcc -lm -fuse-ld=lld -mcmodel=small $(RISCV_LLVM_TARGET) $(RISCV_FLAGS_COMMON) -L$(ROOT_DIR)
 	RISCV_OBJDUMP_FLAGS += --mcpu=mempool-rv32
 	ifeq ($(xDivSqrt), 0)
 		RISCV_OBJDUMP_FLAGS += --mattr=+m,+a,+nofdiv,+xpulpmacsi,+xpulppostmod,+xpulpvect,+xpulpvectshufflepack,+zfinx
@@ -150,7 +150,7 @@ else
 	endif
 
 	# For unit tests
-	RISCV_CCFLAGS_TESTS ?= $(RISCV_FLAGS_LLVM_TESTS) $(RISCV_FLAGS_COMMON_TESTS) -fvisibility=hidden -nostdlib $(RISCV_LDFLAGS)
+	RISCV_CCFLAGS_TESTS ?= $(RISCV_FLAGS_LLVM_TESTS) $(RISCV_FLAGS_COMMON_TESTS) -fvisibility=hidden  $(RISCV_LDFLAGS)
 endif
 
 LINKER_SCRIPT ?= $(ROOT_DIR)/arch.ld
@@ -188,7 +188,7 @@ OMP_RUNTIME := $(addsuffix .o,$(shell find $(OMP_DIR) -name "*.c" -o -name "*.cp
 
 # Bootrom
 %.elf: %.S $(ROOT_DIR)/bootrom.ld $(LINKER_SCRIPT)
-	$(RISCV_CC) $(RISCV_CCFLAGS) -L$(ROOT_DIR) -T$(ROOT_DIR)/bootrom.ld $< -nostdlib -static -Wl,--no-gc-sections -o $@
+	$(RISCV_CC) $(RISCV_CCFLAGS) -L$(ROOT_DIR) -T$(ROOT_DIR)/bootrom.ld $<  -static -Wl,--no-gc-sections -o $@
 
 %.bin: %.elf
 	$(RISCV_OBJCOPY) -O binary $< $@

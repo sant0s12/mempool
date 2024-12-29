@@ -1,0 +1,43 @@
+app,name,compiler,cycles
+barrier_conv,Mempool barrier cycles,llvm,8605
+barrier_conv,GOMP barrier cycles,llvm,8933
+critical_benchmark,Manual Critical Duration,llvm,49
+critical_benchmark,OMP Critical Duration,llvm,145
+master_benchmark,Manual Master Duration,llvm,7
+master_benchmark,OMP Master Duration,llvm,148
+omp_overhead,Sequential Duration,llvm,3
+omp_overhead,Static Duration,llvm,4117
+omp_overhead,Dynamic Duration,llvm,3986
+omp_overhead,Section Duration,llvm,3913
+omp_parallel_for_benchmark,Sequqntial Duration,llvm,17
+omp_parallel_for_benchmark,OpenMP Parallel Duration,llvm,30201
+omp_parallel_for_benchmark,OpenMP Unrolled Parallel Duration,llvm,17217
+omp_parallel_for_dynamic_benchmark,Sequqntial Duration,llvm,144578
+omp_parallel_for_dynamic_benchmark,Static Duration,llvm,21867
+omp_parallel_for_dynamic_benchmark,Dynamic Duration,llvm,20595
+reduction_benchmark,Sequential Duration,llvm,2072
+reduction_benchmark,Manual Parallel1 Duration,llvm,19350
+reduction_benchmark,Manual Parallel2 Duration,llvm,25254
+reduction_benchmark,OMP Static Duration,llvm,5268
+reduction_benchmark,OMP Dynamic(4) Duration,llvm,8502
+reduction_benchmark,OMP Dynamic(10) Duration,llvm,6771
+single_benchmark,Manual Single Duration,llvm,177
+single_benchmark,OMP Single Duration,llvm,384
+critical_benchmark,Manual Critical Duration,gcc,74
+critical_benchmark,OMP Critical Duration,gcc,91
+master_benchmark,Manual Master Duration,gcc,16
+master_benchmark,OMP Master Duration,gcc,36
+omp_overhead,Sequential Duration,gcc,3
+omp_overhead,Static Duration,gcc,453
+omp_overhead,Dynamic Duration,gcc,642
+omp_overhead,Section Duration,gcc,755
+omp_parallel_for_benchmark,Manual Parallel Duration,gcc,23695
+omp_parallel_for_benchmark,Manual unrolled Parallel Duration,gcc,9164
+omp_parallel_for_benchmark,Sequqntial Duration,gcc,3
+omp_parallel_for_benchmark,OpenMP Parallel Duration,gcc,24345
+omp_parallel_for_benchmark,OpenMP Unrolled Parallel Duration,gcc,9544
+omp_parallel_for_dynamic_benchmark,Sequqntial Duration,gcc,138645
+omp_parallel_for_dynamic_benchmark,Static Duration,gcc,43867
+omp_parallel_for_dynamic_benchmark,Dynamic Duration,gcc,21555
+single_benchmark,Manual Single Duration,gcc,124
+single_benchmark,OMP Single Duration,gcc,1162

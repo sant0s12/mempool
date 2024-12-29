@@ -32,6 +32,9 @@ def runAll(dir, args, env):
             if (os.path.isfile(os.path.join(dir, app)) or app.startswith(".")):
                 continue
 
+            if not "workload" in app:
+                continue
+
             app_dir = f"{os.path.basename(dir)}/{app}"
 
             (res, reason, output) = runner.run(

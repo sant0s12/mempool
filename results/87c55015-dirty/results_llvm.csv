@@ -1,0 +1,45 @@
+app,name,compiler,cycles
+omp_parallel_for_benchmark,Sequqntial Duration,llvm,17
+omp_parallel_for_benchmark,OpenMP Parallel Duration,llvm,27017
+omp_parallel_for_benchmark,OpenMP Unrolled Parallel Duration,llvm,14394
+barrier_benchmark,1 barriers,llvm,75
+barrier_benchmark,2 barriers,llvm,168
+barrier_benchmark,3 barriers,llvm,247
+barrier_benchmark,4 barriers,llvm,330
+barrier_benchmark,5 barriers,llvm,411
+barrier_benchmark,6 barriers,llvm,490
+barrier_benchmark,7 barriers,llvm,571
+barrier_benchmark,8 barriers,llvm,654
+barrier_benchmark,9 barriers,llvm,735
+barrier_benchmark,10 barriers,llvm,815
+barrier_benchmark,11 barriers,llvm,897
+barrier_benchmark,12 barriers,llvm,974
+barrier_benchmark,13 barriers,llvm,1057
+barrier_benchmark,14 barriers,llvm,1139
+barrier_benchmark,15 barriers,llvm,1217
+barrier_benchmark,16 barriers,llvm,1299
+critical_benchmark,Manual Critical Duration,llvm,49
+critical_benchmark,OMP Critical Duration,llvm,97
+master_benchmark,Manual Master Duration,llvm,7
+master_benchmark,OMP Master Duration,llvm,60
+omp_parallel_for_dynamic_benchmark,Sequqntial Duration,llvm,144580
+reduction_benchmark,Sequential Duration,llvm,2072
+reduction_benchmark,Manual Parallel1 Duration,llvm,13880
+reduction_benchmark,Manual Parallel2 Duration,llvm,19877
+reduction_benchmark,OMP Static Duration,llvm,2556
+reduction_benchmark2,Static duration with 1 elements,llvm,2431
+reduction_benchmark2,Static duration with 2 elements,llvm,2095
+reduction_benchmark2,Static duration with 4 elements,llvm,2023
+reduction_benchmark2,Static duration with 8 elements,llvm,2044
+reduction_benchmark2,Static duration with 16 elements,llvm,2022
+reduction_benchmark2,Static duration with 32 elements,llvm,2125
+reduction_benchmark2,Static duration with 64 elements,llvm,2117
+reduction_benchmark2,Static duration with 128 elements,llvm,2159
+reduction_benchmark2,Static duration with 256 elements,llvm,2310
+reduction_benchmark2,Static duration with 512 elements,llvm,2462
+reduction_benchmark2,Static duration with 1024 elements,llvm,2826
+reduction_benchmark2,Static duration with 2048 elements,llvm,3638
+reduction_benchmark2,Static duration with 4096 elements,llvm,5171
+reduction_benchmark2,Static duration with 8192 elements,llvm,8223
+single_benchmark,Manual Single Duration,llvm,149
+single_benchmark,OMP Single Duration,llvm,114

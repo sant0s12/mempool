@@ -1,0 +1,17 @@
+app,name,compiler,cycles
+barrier_benchmark,1 barriers,llvm,144
+barrier_benchmark,2 barriers,llvm,222
+barrier_benchmark,3 barriers,llvm,347
+barrier_benchmark,4 barriers,llvm,422
+barrier_benchmark,5 barriers,llvm,556
+barrier_benchmark,6 barriers,llvm,678
+barrier_benchmark,7 barriers,llvm,765
+barrier_benchmark,8 barriers,llvm,880
+barrier_benchmark,9 barriers,llvm,968
+barrier_benchmark,10 barriers,llvm,1090
+barrier_benchmark,11 barriers,llvm,1231
+barrier_benchmark,12 barriers,llvm,1287
+barrier_benchmark,13 barriers,llvm,1386
+barrier_benchmark,14 barriers,llvm,1557
+barrier_benchmark,15 barriers,llvm,1671
+barrier_benchmark,16 barriers,llvm,1760

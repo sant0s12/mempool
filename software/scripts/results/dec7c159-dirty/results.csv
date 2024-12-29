@@ -1,0 +1,139 @@
+app,name,compiler,cycles
+workload_benchmark,Sequential SPMV Duration with size 1,gcc,100
+workload_benchmark,Static SPMV Duration with size 1,gcc,673
+workload_benchmark,Dynamic SPMV Duration with size 1,gcc,1294
+workload_benchmark,Sequential SPMV Duration with size 2,gcc,116
+workload_benchmark,Static SPMV Duration with size 2,gcc,503
+workload_benchmark,Dynamic SPMV Duration with size 2,gcc,1093
+workload_benchmark,Sequential SPMV Duration with size 4,gcc,139
+workload_benchmark,Static SPMV Duration with size 4,gcc,566
+workload_benchmark,Dynamic SPMV Duration with size 4,gcc,1063
+workload_benchmark,Sequential SPMV Duration with size 8,gcc,213
+workload_benchmark,Static SPMV Duration with size 8,gcc,562
+workload_benchmark,Dynamic SPMV Duration with size 8,gcc,1082
+workload_benchmark,Sequential SPMV Duration with size 16,gcc,365
+workload_benchmark,Static SPMV Duration with size 16,gcc,548
+workload_benchmark,Dynamic SPMV Duration with size 16,gcc,1144
+workload_benchmark,Sequential SPMV Duration with size 32,gcc,669
+workload_benchmark,Static SPMV Duration with size 32,gcc,585
+workload_benchmark,Dynamic SPMV Duration with size 32,gcc,1086
+workload_benchmark,Sequential SPMV Duration with size 64,gcc,2399
+workload_benchmark,Static SPMV Duration with size 64,gcc,903
+workload_benchmark,Dynamic SPMV Duration with size 64,gcc,1214
+workload_benchmark,Sequential SPMV Duration with size 128,gcc,8732
+workload_benchmark,Static SPMV Duration with size 128,gcc,2378
+workload_benchmark,Dynamic SPMV Duration with size 128,gcc,2074
+workload_benchmark,Sequential SPMV Duration with size 256,gcc,32774
+workload_benchmark,Static SPMV Duration with size 256,gcc,8066
+workload_benchmark,Dynamic SPMV Duration with size 256,gcc,5292
+workload_benchmark,Sequential SPMV Duration with size 512,gcc,138608
+workload_benchmark,Static SPMV Duration with size 512,gcc,43642
+workload_benchmark,Dynamic SPMV Duration with size 512,gcc,21219
+workload_benchmark,Sequential MM Duration with size 1,gcc,75
+workload_benchmark,Parallel MM Duration with size 1,gcc,466
+workload_benchmark,Sequential MM Duration with size 2,gcc,174
+workload_benchmark,Parallel MM Duration with size 2,gcc,457
+workload_benchmark,Sequential MM Duration with size 4,gcc,831
+workload_benchmark,Parallel MM Duration with size 4,gcc,644
+workload_benchmark,Sequential MM Duration with size 8,gcc,6057
+workload_benchmark,Parallel MM Duration with size 8,gcc,1195
+workload_benchmark,Sequential MM Duration with size 16,gcc,46001
+workload_benchmark,Parallel MM Duration with size 16,gcc,3368
+workload_benchmark,Sequential MM Duration with size 32,gcc,359745
+workload_benchmark,Parallel MM Duration with size 32,gcc,24273
+workload_benchmark,Sequential Dot Product duration with 1 elements,gcc,44
+workload_benchmark,Static Dot Product duration with 1 elements,gcc,434
+workload_benchmark,Sequential Dot Product duration with 2 elements,gcc,50
+workload_benchmark,Static Dot Product duration with 2 elements,gcc,391
+workload_benchmark,Sequential Dot Product duration with 4 elements,gcc,77
+workload_benchmark,Static Dot Product duration with 4 elements,gcc,409
+workload_benchmark,Sequential Dot Product duration with 8 elements,gcc,103
+workload_benchmark,Static Dot Product duration with 8 elements,gcc,397
+workload_benchmark,Sequential Dot Product duration with 16 elements,gcc,199
+workload_benchmark,Static Dot Product duration with 16 elements,gcc,465
+workload_benchmark,Sequential Dot Product duration with 32 elements,gcc,385
+workload_benchmark,Static Dot Product duration with 32 elements,gcc,413
+workload_benchmark,Sequential Dot Product duration with 64 elements,gcc,711
+workload_benchmark,Static Dot Product duration with 64 elements,gcc,423
+workload_benchmark,Sequential Dot Product duration with 128 elements,gcc,1409
+workload_benchmark,Static Dot Product duration with 128 elements,gcc,532
+workload_benchmark,Sequential Dot Product duration with 256 elements,gcc,2775
+workload_benchmark,Static Dot Product duration with 256 elements,gcc,601
+workload_benchmark,Sequential Dot Product duration with 512 elements,gcc,5532
+workload_benchmark,Static Dot Product duration with 512 elements,gcc,746
+workload_benchmark,Sequential Dot Product duration with 1024 elements,gcc,11041
+workload_benchmark,Static Dot Product duration with 1024 elements,gcc,1209
+workload_benchmark,Sequential Dot Product duration with 2048 elements,gcc,22049
+workload_benchmark,Static Dot Product duration with 2048 elements,gcc,1833
+workload_benchmark,Sequential Dot Product duration with 4096 elements,gcc,44065
+workload_benchmark,Static Dot Product duration with 4096 elements,gcc,3225
+workload_benchmark,res,gcc,2097247507
+workload_benchmark,Sequential SPMV Duration with size 1,llvm,51
+workload_benchmark,Static SPMV Duration with size 1,llvm,1429
+workload_benchmark,Dynamic SPMV Duration with size 1,llvm,2653
+workload_benchmark,Sequential SPMV Duration with size 2,llvm,64
+workload_benchmark,Static SPMV Duration with size 2,llvm,1128
+workload_benchmark,Dynamic SPMV Duration with size 2,llvm,2288
+workload_benchmark,Sequential SPMV Duration with size 4,llvm,101
+workload_benchmark,Static SPMV Duration with size 4,llvm,1160
+workload_benchmark,Dynamic SPMV Duration with size 4,llvm,2273
+workload_benchmark,Sequential SPMV Duration with size 8,llvm,190
+workload_benchmark,Static SPMV Duration with size 8,llvm,1127
+workload_benchmark,Dynamic SPMV Duration with size 8,llvm,2282
+workload_benchmark,Sequential SPMV Duration with size 16,llvm,358
+workload_benchmark,Static SPMV Duration with size 16,llvm,1151
+workload_benchmark,Dynamic SPMV Duration with size 16,llvm,2638
+workload_benchmark,Sequential SPMV Duration with size 32,llvm,694
+workload_benchmark,Static SPMV Duration with size 32,llvm,1185
+workload_benchmark,Dynamic SPMV Duration with size 32,llvm,2594
+workload_benchmark,Sequential SPMV Duration with size 64,llvm,2626
+workload_benchmark,Static SPMV Duration with size 64,llvm,2109
+workload_benchmark,Dynamic SPMV Duration with size 64,llvm,3052
+workload_benchmark,Sequential SPMV Duration with size 128,llvm,9436
+workload_benchmark,Static SPMV Duration with size 128,llvm,2537
+workload_benchmark,Dynamic SPMV Duration with size 128,llvm,4639
+workload_benchmark,Sequential SPMV Duration with size 256,llvm,34817
+workload_benchmark,Static SPMV Duration with size 256,llvm,12433
+workload_benchmark,Dynamic SPMV Duration with size 256,llvm,10553
+workload_benchmark,Sequential SPMV Duration with size 512,llvm,145254
+workload_benchmark,Static SPMV Duration with size 512,llvm,54505
+workload_benchmark,Dynamic SPMV Duration with size 512,llvm,12361
+workload_benchmark,Sequential MM Duration with size 1,llvm,63
+workload_benchmark,Parallel MM Duration with size 1,llvm,1169
+workload_benchmark,Sequential MM Duration with size 2,llvm,179
+workload_benchmark,Parallel MM Duration with size 2,llvm,1096
+workload_benchmark,Sequential MM Duration with size 4,llvm,929
+workload_benchmark,Parallel MM Duration with size 4,llvm,1291
+workload_benchmark,Sequential MM Duration with size 8,llvm,6409
+workload_benchmark,Parallel MM Duration with size 8,llvm,1915
+workload_benchmark,Sequential MM Duration with size 16,llvm,47993
+workload_benchmark,Parallel MM Duration with size 16,llvm,4285
+workload_benchmark,Sequential MM Duration with size 32,llvm,371924
+workload_benchmark,Parallel MM Duration with size 32,llvm,26547
+workload_benchmark,Sequential Dot Product duration with 1 elements,llvm,42
+workload_benchmark,Static Dot Product duration with 1 elements,llvm,1056
+workload_benchmark,Sequential Dot Product duration with 2 elements,llvm,45
+workload_benchmark,Static Dot Product duration with 2 elements,llvm,1048
+workload_benchmark,Sequential Dot Product duration with 4 elements,llvm,71
+workload_benchmark,Static Dot Product duration with 4 elements,llvm,1024
+workload_benchmark,Sequential Dot Product duration with 8 elements,llvm,123
+workload_benchmark,Static Dot Product duration with 8 elements,llvm,999
+workload_benchmark,Sequential Dot Product duration with 16 elements,llvm,226
+workload_benchmark,Static Dot Product duration with 16 elements,llvm,1025
+workload_benchmark,Sequential Dot Product duration with 32 elements,llvm,422
+workload_benchmark,Static Dot Product duration with 32 elements,llvm,1029
+workload_benchmark,Sequential Dot Product duration with 64 elements,llvm,835
+workload_benchmark,Static Dot Product duration with 64 elements,llvm,1042
+workload_benchmark,Sequential Dot Product duration with 128 elements,llvm,1651
+workload_benchmark,Static Dot Product duration with 128 elements,llvm,1054
+workload_benchmark,Sequential Dot Product duration with 256 elements,llvm,3283
+workload_benchmark,Static Dot Product duration with 256 elements,llvm,1193
+workload_benchmark,Sequential Dot Product duration with 512 elements,llvm,6547
+workload_benchmark,Static Dot Product duration with 512 elements,llvm,1356
+workload_benchmark,Sequential Dot Product duration with 1024 elements,llvm,13075
+workload_benchmark,Static Dot Product duration with 1024 elements,llvm,1774
+workload_benchmark,Sequential Dot Product duration with 2048 elements,llvm,26123
+workload_benchmark,Static Dot Product duration with 2048 elements,llvm,2627
+workload_benchmark,Sequential Dot Product duration with 4096 elements,llvm,52243
+workload_benchmark,Static Dot Product duration with 4096 elements,llvm,4184
+workload_benchmark,res,llvm,660741751

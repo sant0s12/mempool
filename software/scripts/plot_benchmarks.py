@@ -41,7 +41,7 @@ def plot_speedup(df):
 
         # Unique test names
         test_names = app_data['name']
-        test_names = ['\n'.join(textwrap.wrap(name, width=10))
+        test_names = ['\n'.join(textwrap.wrap(str(name), width=10))
                       for name in test_names]
 
         # Speedup values
@@ -52,7 +52,7 @@ def plot_speedup(df):
         x = np.arange(len(test_names))  # Position for bars
 
         # Create the bar plot
-        plt.figure()
+        plt.figure(figsize=(5, 4), dpi=1000)
 
         # Plot speedup values
         bars = plt.bar(x, speedup_values, width=bar_width,
@@ -62,14 +62,17 @@ def plot_speedup(df):
         for bar, value in zip(bars, speedup_values):
             height = max(1, bar.get_height())
             _, top = plt.ylim()
-            plt.ylim(top=max(top, height + 0.3))
+            plt.ylim(top=max(top, height + 0.5))
             plt.text(bar.get_x() + bar.get_width() / 2, height +
                      0.05, f'{value:.2f}', ha='center', va='bottom')
 
         # Set x-axis labels, title, etc.
         plt.ylabel('GCC/LLVM Ratio (Speedup)')
+
+        plt.xlabel('Input size')
+
         plt.title(f'Speedup of LLVM Against GCC for {app}')
-        plt.xticks(x, test_names, rotation=45, ha='right')
+        plt.xticks(x, test_names)
         plt.axhline(y=1, color='red', linestyle='--',
                     linewidth=1, label='Baseline (GCC)')
         plt.legend()
@@ -118,20 +121,23 @@ def plot_cycles(df):
         x = np.arange(len(test_names))  # Position for bars
 
         # Create the bar plot
-        plt.figure(figsize=(10, 6))
-
-        # Plot LLVM cycles if available
-        if llvm_cycles:
-            plt.bar(x, llvm_cycles, width=bar_width, label='LLVM')
+        plt.figure(figsize=(5, 4), dpi=1000)
 
         # Plot GCC cycles if available
         if gcc_cycles:
-            plt.bar(x + bar_width, gcc_cycles, width=bar_width, label='GCC')
+            plt.bar(x, gcc_cycles, width=bar_width, label='GCC')
+
+        # Plot LLVM cycles if available
+        if llvm_cycles:
+            plt.bar(x + bar_width, llvm_cycles, width=bar_width, label='LLVM')
 
         # Set x-axis labels, title, etc.
         plt.ylabel('Cycles')
+
+        plt.xlabel('Input size')
+
         plt.title(f'Cycles Comparison for {app}')
-        plt.xticks(x + bar_width / 2, test_names, rotation=45, ha='right')
+        plt.xticks(x + bar_width / 2, test_names)
         plt.legend()
         plt.tight_layout()  # Adjust layout for readability
         plt.savefig(f'results/{GIT_COMMIT_HASH}/{app}_cycles.png')
@@ -143,6 +149,8 @@ def main():
 
     if ("dirty" in GIT_COMMIT_HASH):
         print("WARNING: The current commit is dirty.")
+
+    print(GIT_COMMIT_HASH)
 
     plot_speedup(df)
     plot_cycles(df)

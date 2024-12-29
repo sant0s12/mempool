@@ -1,0 +1,76 @@
+app,name,compiler,cycles
+omp_parallel_for_benchmark,Sequqntial Duration,llvm,17
+omp_parallel_for_benchmark,OpenMP Parallel Duration,llvm,26639
+omp_parallel_for_benchmark,OpenMP Unrolled Parallel Duration,llvm,14007
+barrier_benchmark,1 barriers,llvm,89
+barrier_benchmark,2 barriers,llvm,167
+barrier_benchmark,3 barriers,llvm,248
+barrier_benchmark,4 barriers,llvm,329
+barrier_benchmark,5 barriers,llvm,411
+barrier_benchmark,6 barriers,llvm,491
+barrier_benchmark,7 barriers,llvm,572
+barrier_benchmark,8 barriers,llvm,658
+barrier_benchmark,9 barriers,llvm,739
+barrier_benchmark,10 barriers,llvm,820
+barrier_benchmark,11 barriers,llvm,901
+barrier_benchmark,12 barriers,llvm,986
+barrier_benchmark,13 barriers,llvm,1069
+barrier_benchmark,14 barriers,llvm,1148
+barrier_benchmark,15 barriers,llvm,1229
+barrier_benchmark,16 barriers,llvm,1310
+critical_benchmark,Manual Critical Duration,llvm,49
+critical_benchmark,OMP Critical Duration,llvm,102
+master_benchmark,Manual Master Duration,llvm,7
+master_benchmark,OMP Master Duration,llvm,69
+omp_parallel_for_dynamic_benchmark,Sequqntial Duration,llvm,144579
+omp_parallel_for_dynamic_benchmark,Static Duration,llvm,53467
+reduction_benchmark,Sequential Duration,llvm,2072
+reduction_benchmark,Manual Parallel1 Duration,llvm,13412
+reduction_benchmark,Manual Parallel2 Duration,llvm,19277
+reduction_benchmark,OMP Static Duration,llvm,2197
+reduction_benchmark2,Static duration with 1 elements,llvm,2213
+reduction_benchmark2,Static duration with 2 elements,llvm,1859
+reduction_benchmark2,Static duration with 4 elements,llvm,1871
+reduction_benchmark2,Static duration with 8 elements,llvm,1851
+reduction_benchmark2,Static duration with 16 elements,llvm,1803
+reduction_benchmark2,Static duration with 32 elements,llvm,1837
+reduction_benchmark2,Static duration with 64 elements,llvm,1880
+reduction_benchmark2,Static duration with 128 elements,llvm,1954
+reduction_benchmark2,Static duration with 256 elements,llvm,2018
+reduction_benchmark2,Static duration with 512 elements,llvm,2225
+reduction_benchmark2,Static duration with 1024 elements,llvm,2555
+reduction_benchmark2,Static duration with 2048 elements,llvm,3397
+reduction_benchmark2,Static duration with 4096 elements,llvm,4863
+reduction_benchmark2,Static duration with 8192 elements,llvm,8048
+single_benchmark,Manual Single Duration,llvm,149
+single_benchmark,OMP Single Duration,llvm,117
+critical_benchmark,Manual Critical Duration,gcc,74
+critical_benchmark,OMP Critical Duration,gcc,91
+master_benchmark,Manual Master Duration,gcc,16
+master_benchmark,OMP Master Duration,gcc,36
+omp_parallel_for_benchmark,Manual Parallel Duration,gcc,23695
+omp_parallel_for_benchmark,Manual unrolled Parallel Duration,gcc,9164
+omp_parallel_for_benchmark,Sequqntial Duration,gcc,3
+omp_parallel_for_benchmark,OpenMP Parallel Duration,gcc,24345
+omp_parallel_for_benchmark,OpenMP Unrolled Parallel Duration,gcc,9544
+omp_parallel_for_dynamic_benchmark,Sequqntial Duration,gcc,138645
+omp_parallel_for_dynamic_benchmark,Static Duration,gcc,43867
+omp_parallel_for_dynamic_benchmark,Dynamic Duration,gcc,21555
+single_benchmark,Manual Single Duration,gcc,124
+single_benchmark,OMP Single Duration,gcc,1162
+barrier_benchmark,1 barriers,gcc,181
+barrier_benchmark,2 barriers,gcc,230
+barrier_benchmark,3 barriers,gcc,335
+barrier_benchmark,4 barriers,gcc,434
+barrier_benchmark,5 barriers,gcc,553
+barrier_benchmark,6 barriers,gcc,653
+barrier_benchmark,7 barriers,gcc,762
+barrier_benchmark,8 barriers,gcc,877
+barrier_benchmark,9 barriers,gcc,972
+barrier_benchmark,10 barriers,gcc,1088
+barrier_benchmark,11 barriers,gcc,1199
+barrier_benchmark,12 barriers,gcc,1306
+barrier_benchmark,13 barriers,gcc,1419
+barrier_benchmark,14 barriers,gcc,1511
+barrier_benchmark,15 barriers,gcc,1613
+barrier_benchmark,16 barriers,gcc,1724
